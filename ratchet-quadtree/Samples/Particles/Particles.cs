@@ -61,8 +61,6 @@ namespace Particles
 
         public void Refresh()
         {
-            ulong particles_evaluated = 0;
-
             Ratchet.Collections.Quadtree<AgregatedParticle> particles = CreateGrid();
             Parallel.ForEach<Particle>(_Swarm, (Particle particle) =>
             {
@@ -77,8 +75,7 @@ namespace Particles
                     {
                         if (neighboor.Element != null)
                         {
-                            particles_evaluated++;
-
+                            // Quick interaction it is not meant to be accurate just pretty :)
                             float nx = neighboor.Element._x;
                             float ny = neighboor.Element._y;
                             int weight = neighboor.Element._weigth;

@@ -15,15 +15,19 @@ namespace Ratchet.Collections
             long _Y;
             ulong _Size;
 
+            Node _Parent;
+            Node Parent { get { return _Parent; } }
+
             public long X { get { return _X; } }
             public long Y { get { return _Y; } }
             public ulong Size { get { return _Size; } }
 
-            internal Node(long X, long Y, ulong Size)
+            internal Node(Node Parent, long X, long Y, ulong Size)
             {
                 _X = X;
                 _Y = Y;
                 _Size = Size;
+                _Parent = Parent;
             }
 
             internal Node _0_0 = null;
@@ -53,10 +57,10 @@ namespace Ratchet.Collections
                 {
                     if (_Size > 1)
                     {
-                        _0_0 = new Node(_X, _Y, _Size / 2UL);
-                        _1_0 = new Node(_X + (long)(_Size / 2UL), _Y, _Size / 2UL);
-                        _0_1 = new Node(_X, _Y + (long)(_Size / 2UL), _Size / 2UL);
-                        _1_1 = new Node(_X + (long)(_Size / 2UL), _Y + (long)(_Size / 2UL), _Size / 2UL);
+                        _0_0 = new Node(this, _X, _Y, _Size / 2UL);
+                        _1_0 = new Node(this, _X + (long)(_Size / 2UL), _Y, _Size / 2UL);
+                        _0_1 = new Node(this, _X, _Y + (long)(_Size / 2UL), _Size / 2UL);
+                        _1_1 = new Node(this, _X + (long)(_Size / 2UL), _Y + (long)(_Size / 2UL), _Size / 2UL);
                     }
                     else
                     {
@@ -446,7 +450,7 @@ namespace Ratchet.Collections
         {
             if (Size > ulong.MaxValue / 2UL + 1UL) { throw new Exception("The size must be lower or equal to 0x" + (ulong.MaxValue / 2UL + 1UL).ToString("X")); }
             long minValue = -(long)Size / 2L;
-            _RootNode = new Node(minValue, minValue, Size);
+            _RootNode = new Node(null, minValue, minValue, Size);
         }
 
         public Quadtree() : this(ulong.MaxValue / 2UL + 1UL)

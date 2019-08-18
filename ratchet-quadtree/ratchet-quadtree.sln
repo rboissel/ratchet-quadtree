@@ -9,6 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{729A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particles", "Samples\Particles\Particles.csproj", "{C8AFE637-9D4C-4CE1-A788-34BA9CB7223B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{F8965955-3BF2-4CD0-8493-2FD6552FAAED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree-net40", "Build\ratchet-quadtree-net40\ratchet-quadtree-net40.csproj", "{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree-net45", "Build\ratchet-quadtree-net45\ratchet-quadtree-net45.csproj", "{AC73A067-5CB7-4FDF-8E73-E15BF3861429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree-net46", "Build\ratchet-quadtree-net46\ratchet-quadtree-net46.csproj", "{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +31,27 @@ Global
 		{C8AFE637-9D4C-4CE1-A788-34BA9CB7223B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8AFE637-9D4C-4CE1-A788-34BA9CB7223B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8AFE637-9D4C-4CE1-A788-34BA9CB7223B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC73A067-5CB7-4FDF-8E73-E15BF3861429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC73A067-5CB7-4FDF-8E73-E15BF3861429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC73A067-5CB7-4FDF-8E73-E15BF3861429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC73A067-5CB7-4FDF-8E73-E15BF3861429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C8AFE637-9D4C-4CE1-A788-34BA9CB7223B} = {729AA9AA-B3FB-44A1-A3CA-3B3FE37E58C5}
+		{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
+		{AC73A067-5CB7-4FDF-8E73-E15BF3861429} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
+		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60C75A46-70AA-4FD9-8DBF-BA70ECDC281E}

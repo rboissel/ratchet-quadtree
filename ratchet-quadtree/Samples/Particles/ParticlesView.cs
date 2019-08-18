@@ -35,14 +35,10 @@ namespace Particles
             {
                 var g = System.Drawing.Graphics.FromImage(bitmap);
                 Ratchet.Collections.Quadtree<Particles.AgregatedParticle> tree = particles.CreateGrid();
-                DateTime requestStart = DateTime.Now;
-
                 foreach (var node in tree.Query(0, 0, (ulong)bitmap.Width, (ulong)bitmap.Height))
                 {
                     if (node.Size > 1) { g.DrawRectangle(pen, node.X, node.Y, node.Size, node.Size); }
                 }
-                DateTime requestEnd = DateTime.Now;
-                Console.WriteLine((requestEnd - requestStart).TotalMilliseconds);
             }
 
             e.Graphics.DrawImage(bitmap, new Rectangle(0, 0, Width, Height));
