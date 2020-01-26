@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Particles", "Samples\Particles\Particles.csproj", "{C8AFE637-9D4C-4CE1-A788-34BA9CB7223B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{F8965955-3BF2-4CD0-8493-2FD6552FAAED}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Ratchet.Collections.Quadtree.nuspec = Build\Ratchet.Collections.Quadtree.nuspec
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree-net40", "Build\ratchet-quadtree-net40\ratchet-quadtree-net40.csproj", "{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C}"
 EndProject
