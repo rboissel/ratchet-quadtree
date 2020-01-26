@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>ratchet_quadtree_netstandard20</RootNamespace>
+    <AssemblyName>ratchet-quadtree</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\..\bin\Debug\ratchet-quadtree\lib\</OutputPath>
+    <DocumentationFile>..\..\bin\Debug\ratchet-quadtree\lib\netstandard2.0\ratchet-quadtree.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\bin\Release\ratchet-quadtree\lib\</OutputPath>
+    <DocumentationFile>..\..\bin\Release\ratchet-quadtree\lib\netstandard2.0\ratchet-quadtree.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\ratchet-quadtree\QuadTree.cs" Link="QuadTree.cs" />
+  </ItemGroup>
+
+</Project>

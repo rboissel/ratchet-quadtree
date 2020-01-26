@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree", "ratchet-quadtree\ratchet-quadtree.csproj", "{077BC62A-189C-4021-B9F7-C18E9670B72B}"
 EndProject
@@ -16,6 +16,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree-net45", "Build\ratchet-quadtree-net45\ratchet-quadtree-net45.csproj", "{AC73A067-5CB7-4FDF-8E73-E15BF3861429}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree-net46", "Build\ratchet-quadtree-net46\ratchet-quadtree-net46.csproj", "{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ratchet-quadtree-netstandard20", "Build\ratchet-quadtree-netstandard20\ratchet-quadtree-netstandard20.csproj", "{A69940F8-61AD-498E-A972-E27390892F60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ratchet-quadtree-netstandard13", "Build\ratchet-quadtree-netstandard13\ratchet-quadtree-netstandard13.csproj", "{461D8997-4A9E-43ED-9D13-4181D5080600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-quadtree-netstandard21", "Build\ratchet-quadtree-netstandard21\ratchet-quadtree-netstandard21.csproj", "{8E49364A-224E-4C39-A914-E0B17884AB34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +49,18 @@ Global
 		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69940F8-61AD-498E-A972-E27390892F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69940F8-61AD-498E-A972-E27390892F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69940F8-61AD-498E-A972-E27390892F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69940F8-61AD-498E-A972-E27390892F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{461D8997-4A9E-43ED-9D13-4181D5080600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461D8997-4A9E-43ED-9D13-4181D5080600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461D8997-4A9E-43ED-9D13-4181D5080600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461D8997-4A9E-43ED-9D13-4181D5080600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E49364A-224E-4C39-A914-E0B17884AB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E49364A-224E-4C39-A914-E0B17884AB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E49364A-224E-4C39-A914-E0B17884AB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E49364A-224E-4C39-A914-E0B17884AB34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +70,9 @@ Global
 		{FA5C8C92-7505-4687-B5F6-E6DC67F1E06C} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
 		{AC73A067-5CB7-4FDF-8E73-E15BF3861429} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
 		{DB7BCAF9-4B91-4367-AAB2-1BD3BCC76515} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
+		{A69940F8-61AD-498E-A972-E27390892F60} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
+		{461D8997-4A9E-43ED-9D13-4181D5080600} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
+		{8E49364A-224E-4C39-A914-E0B17884AB34} = {F8965955-3BF2-4CD0-8493-2FD6552FAAED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60C75A46-70AA-4FD9-8DBF-BA70ECDC281E}
